@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="WaitingDialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <!--自定义时间日期选择器-->
+    <style name="date_picker_dialog" parent="android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowBackground">@color/date_picker_bg</item>
+    </style>
+
+    <!--小文字-->
+    <style name="smallTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_23</item>
+    </style>
+
+    <!-- 小浅灰文字-->
+    <style name="SmallGrayTextStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <!-- 小深灰文字 -->
+    <style name="SmallDarkGrayTextStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_50</item>
+    </style>
+
+    <!-- 普通文字-->
+    <style name="TextStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_23</item>
+    </style>
+
+    <!-- 浅灰普通文字 -->
+    <style name="TextGrayStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/main_gray</item>
+    </style>
+
+    <!-- 深灰普通文字 -->
+    <style name="TextDarkGrayStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/gray_50</item>
+    </style>
+
+    <!--大文字-->
+    <style name="LargeTextStyle">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/gray_23</item>
+    </style>
+
+    <!-- 可点击普通文字-->
+    <style name="TextClickStyle" parent="android:Widget.TextView">
+        <item name="android:textSize">12sp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:textColor">@color/gray_50</item>
+    </style>
+
+    <!--一般蓝色按钮-->
+    <style name="ButtonStyle">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/btn_normal_blue</item>
+    </style>
+
+    <!--一般灰色按钮-->
+    <style name="ButtonStyleGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/main_gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/btn_normal_gray</item>
+    </style>
+
+    <!--圆角蓝色按钮-->
+    <style name="ButtonStyleConor">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/btn_conor_blue</item>
+    </style>
+
+    <!--圆角灰色按钮-->
+    <style name="ButtonStyleConorGray">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/main_gray</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/btn_conor_gray</item>
+    </style>
+</resources>

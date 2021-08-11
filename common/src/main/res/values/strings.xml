@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="dummy"> </string>
+    <string name="save_picture">保存图片</string>
+    <string name="save_picture_as" formatted="false">图片保存在 %s</string>
+    <string name="save_picture_failed">保存图片失败</string>
+    <string name="minute">分钟</string>
+    <string name="hour">小时</string>
+    <string name="day">天</string>
+    <string name="month1">1月</string>
+    <string name="yestoday">昨天</string>
+    <string name="photo_file">相册</string>
+    <string name="open_light">开灯</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+    <string name="scan_barcode">扫描二维码</string>
+
+    <string name="network_timeout">网络访问超时 </string>
+    <string name="no_data_found">暂无数据</string>
+    <string name="network_problem">网络不给力，请确保网络畅通</string>
+    <string name="illegal_access">无效的访问，请在登录后操作</string>
+    <string name="club_offline">球会端通讯错误，请联系管理员。</string>
+    <string name="operation_failed">操作失败 ！</string>
+    <string name="interface_error">服务器异常</string>
+    <string name="server_error">服务器异常</string>
+    <string name="unexpected_error">意外错误：</string>
+
+    <string name="error">错误</string>
+    <string name="msg_info">信息</string>
+    <string name="confirm">确认</string>
+    <string name="prompt">提示</string>
+    <string name="no_pic_crop_tool">无法打开图片剪裁工具</string>
+    <string name="invalid_input" formatted="false">请输入有效的 %s</string>
+    <string name="operation_success" formatted="false">操作%s！</string>
+    <string name="get_verify_code">验证码</string>
+    <string name="invalid_verify_code">无效的验证码</string>
+    <string name="wait" formatted="true">%d 秒</string>
+    <string name="cancel">取消</string>
+    <string name="ok">确定</string>
+    <string name="no_new_version">目前是最新版本 </string>
+    <string name="found_new_version">发现新版本 %s</string>
+    <string name="force_download">您需要下载新版本才能正常使用系统功能。</string>
+    <string name="ask_download">是否要下载？</string>
+    <string name="check_version">检查版本</string>
+    <string name="delete">删除</string>
+    <string name="loading_data">正在加载</string>
+    <string name="app_name"></string>
+    <string name="downloading_please_wait">正在下载新版本，请稍候……</string>
+    <string name="please_relogin">请重新登录</string>
+    <string name="selecte_all">✔全选</string>
+
+</resources>

@@ -1,0 +1,21 @@
+﻿xiwei.keystore  签名文件说明
+
+
+密码:02985403325
+Alias: xiwei
+密码:02985403325
+
+MD5: 14:AF:74:AE:4A:FD:6B:65:B2:80:E8:BC:B8:CF:F3:89
+SHA1: 3F:54:7F:41:7D:6B:62:D7:17:79:DA:56:28:EE:72:89:1D:06:19:2B
+Valid until: 2895年9月7日 星期三
+
+PackageName:com.kunbo.xiweiapp
+高德地图 HighSpeed    Key: 65d33463b84d632b6c36fcc3c718513a
+
+GreenDao数据库升级说明：
+1. 新建表或更改表字段都需要在build.gradle 中greendao - schemaVersion 版本号+1
+2. 新建数据库表需要在 MyDBHelper - onUpgrade  中创建新表  eg： SecurityItemsDao.createTable(db, true);
+3. 更改数据库表字段需要在 MyDBHelper - onUpgrade  中迁移旧表数据  eg：DBMigrationHelper.getInstance().migrate(db, SecurityItemsDao.class);
+
+
+

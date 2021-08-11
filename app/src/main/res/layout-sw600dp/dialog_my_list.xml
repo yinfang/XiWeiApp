@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_large"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:minHeight="@dimen/line_height">
+
+        <AutoCompleteTextView
+            android:id="@+id/et_search_name"
+            style="@style/TextStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/selector_solid_gray"
+            android:completionThreshold="1"
+            android:gravity="center"
+            android:hint="输入姓名搜索收费员"
+            android:maxLength="10"
+            android:minHeight="@dimen/line_height"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginEnd="@dimen/margin_normal"
+            android:background="@mipmap/search"
+            android:clickable="true"
+            android:focusable="true" />
+    </FrameLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:listSelector="@drawable/selector_tansparent_bg"
+        tools:listitem="@layout/dialog_list_item" />
+
+</LinearLayout>

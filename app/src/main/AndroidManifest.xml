@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.zyf.xiweiapp">
+
+    <!-- 用于获取wifi的获取权限，wifi信息会用来进行网络定位 -->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" /> <!-- 用于访问网络，网络定位需要上网 -->
+    <!-- 用于申请调用A-GPS模块 -->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> <!-- 用于申请获取蓝牙信息进行室内定位 -->
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <!-- //允许一个程序接收到 ACTION_BOOT_COMPLETED广播在系统完成启动 -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> <!-- 启动器权限 -->
+
+    <application
+        android:name="com.kunbo.xiwei.AppApplication"
+        android:allowBackup="true"
+        android:configChanges="orientation|keyboardHidden|screenSize"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/launch"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/launch"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.google.android.actions"
+            android:resource="@xml/network_security_config" />
+        <!-- 修复targetAPI为Android P时X5内核视频无法播放问题 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <activity
+            android:name="com.kunbo.xiwei.activity.LoginActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kunbo.xiwei.activity.MainActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:launchMode="singleTask" />
+        <activity android:name="com.kunbo.xiwei.activity.ChartActivity" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.OndutyFormActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.SignatureActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.HistoryActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.HistoryDetailActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden"/>
+        <!--班长角色-->
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.CivilizedServiceActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.ClassOndutyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.ComplaintManageActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.OverHighActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.OverHighInActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.OverHighOutActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.SecurityCheckActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.monitor.SpecialDoneActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+
+        <!--站长角色-->
+        <activity
+            android:name="com.kunbo.xiwei.activity.agent.StationOndutyActivity"
+            android:configChanges="orientation|screenSize|keyboardHidden" />
+        <activity
+            android:name="com.kunbo.xiwei.activity.agent.InspectionManageActivity"
+            />
+
+        <activity android:name="com.kunbo.xiwei.activity.TbsTestActivity" /><!-- 腾讯浏览服务视频播放 -->
+        <activity
+            android:name="com.tencent.smtt.sdk.VideoActivity"
+            android:alwaysRetainTaskState="true"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            android:exported="false"
+            android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="com.tencent.smtt.tbs.video.PLAY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity> <!-- 高德定位service -->
+        <service android:name="com.amap.api.location.APSService" />
+       <!-- <receiver
+            android:name="com.kunbo.xiwei.receiver.BootReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter android:priority="1000">
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            &lt;!&ndash;  <intent-filter>
+                  <action android:name="android.intent.action.PACKAGE_ADDED" />&lt;!&ndash;监听应用的安装&ndash;&gt;
+                  <action android:name="android.intent.action.PACKAGE_REPLACED" />&lt;!&ndash;监听应用替换&ndash;&gt;
+                  <action android:name="android.intent.action.PACKAGE_REMOVED" />&lt;!&ndash;监听应用的卸载&ndash;&gt;
+                  <data android:scheme="package" />
+              </intent-filter>&ndash;&gt;
+        </receiver>-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="65d33463b84d632b6c36fcc3c718513a" /> <!-- 高德地图开发者申请的key -->
+
+        <!-- 使用FileProvider解决Android 7.0以上版本调用拍照FileUriExposedException -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <service
+            android:name="com.kunbo.xiwei.service.SubmitDataService"
+            android:enabled="true"
+            android:priority = "1000"
+            android:exported="true" />
+    </application>
+
+</manifest>

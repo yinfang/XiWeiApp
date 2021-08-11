@@ -1,0 +1,145 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/transparent</item>
+        <item name="colorPrimaryDark">@color/transparent</item>
+        <!--全局获得光标的颜色-->
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <!--登录按钮-->
+    <style name="loginBtnStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/btn_cycle_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+    <style name="loginBtnStyle1">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/btn_coner_blue</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!--取消按钮-->
+    <style name="cancelBtnStyle">
+        <item name="android:textSize">15sp</item>
+        <item name="android:background">@drawable/selector_gray_btn</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <!-- EditText文字样式-->
+    <style name="EditTextStyle" parent="android:Widget.TextView">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_50</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@drawable/selector_solid_gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:minHeight">@dimen/line_height</item>
+    </style>
+
+    <!--靠右显示的普通文字-->
+    <style name="RightTextStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_23</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:gravity">right</item>
+        <item name="android:paddingLeft">@dimen/margin_normal</item>
+    </style>
+
+    <!--靠右显示的普通文字-->
+    <style name="LineViewStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:background">@color/gray_e0</item>
+        <item name="android:layout_marginBottom">@dimen/margin_normal</item>
+    </style>
+
+    <!--spinner样式-->
+    <style name="SpinnerStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_50</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/spinnre_border</item>
+        <item name="android:minWidth">@dimen/min_width</item>
+        <item name="android:popupBackground">@color/gray_e6</item>
+        <item name="android:entries">@array/prority_list</item>
+        <item name="android:spinnerMode">dialog</item>
+        <item name="android:padding">3dp</item>
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+        <item name="android:text">优</item>
+        <item name="android:minHeight">@dimen/line_height</item>
+    </style>
+
+    <!--可点击的布局-->
+    <style name="LinearLayoutClickStyle">
+        <item name="android:clickable">true</item>
+        <item name="android:focusable">true</item>
+    </style>
+
+    <!--可点击的布局-->
+    <style name="LinearLayoutMarginStyle">
+        <item name="android:layout_marginStart">@dimen/margin_large</item>
+        <item name="android:layout_marginEnd">@dimen/margin_large</item>
+        <item name="android:layout_marginTop">@dimen/margin_normal</item>
+        <item name="android:layout_marginBottom">@dimen/margin_normal</item>
+    </style>
+
+    <!--一般黄色按钮-->
+    <style name="ButtonStyle">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">@color/gray_23</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/btn_normal_yellow</item>
+    </style>
+
+    <!--一般绿色按钮-->
+    <style name="GreenButtonStyle">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:background">@drawable/btn_normal_green</item>
+    </style>
+
+    <!--天气图标-->
+    <integer-array name="WeatherIcons">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+    </integer-array>
+</resources>

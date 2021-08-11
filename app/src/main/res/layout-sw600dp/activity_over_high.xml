@@ -1,0 +1,161 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_mian_bg"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header_ll"
+        layout="@layout/header" />
+
+    <LinearLayout
+        android:id="@+id/car_in_ll"
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/selector_gray_gradient"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/tab_height"
+            android:layout_height="@dimen/tab_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/ic_carin" />
+
+        <TextView
+            style="@style/LargeTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="大件持证超限运输车辆入口查验登记表"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text=">>"
+            android:textColor="@color/title_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/car_out_ll"
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="@dimen/margin_normal"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_marginRight="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/selector_gray_gradient"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/tab_height"
+            android:layout_height="@dimen/tab_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/ic_carout" />
+
+        <TextView
+            style="@style/LargeTextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="大件持证超限运输车辆出口查验登记表"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text=">>"
+            android:textColor="@color/title_blue"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chart_ll"
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/selector_gray_gradient"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="@dimen/tab_height"
+            android:layout_height="@dimen/tab_height"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/ic_bar_chart" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="治超检测数据示意图"
+            android:textColor="@color/gray_23"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/LargeTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text=">>"
+            android:textColor="@color/title_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_coner_blue"
+        android:gravity="center"
+        android:text="@string/title_over_car"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_coner_blue"
+        android:gravity="center"
+        android:text="@string/title_over_car"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</LinearLayout>

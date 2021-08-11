@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zyf.view.SwipeMenuLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/margin_large"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@color/gray_e6"
+    android:paddingBottom="0.1dp"
+    app:leftSwipe="true"
+    app:swipeEnable="true">
+
+    <TextView
+        android:id="@+id/content"
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/margin_normal" />
+
+    <!--以下都是侧滑菜单的内容依序排列-->
+    <Button
+        android:id="@+id/btnTop"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#d9dee4"
+        android:text="置顶"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/btnDelete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="@color/red"
+        android:text="删除"
+        android:textColor="@android:color/white" />
+</com.zyf.view.SwipeMenuLayout>

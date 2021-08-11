@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="btn_blue">#0DADEF</color>
+    <color name="light_blue">#D2F1FE</color>
+    <color name="dark_blue">#182942</color>
+    <color name="week_bg">#FFF2CC</color>
+    <color name="week_text">#0724B9</color>
+    <color name="userll_bg">#8C98B7EE</color>
+    <color name="btn_bg_normal">#FFE88A</color>
+    <color name="btn_bg_press">#FFDC4E</color>
+</resources>

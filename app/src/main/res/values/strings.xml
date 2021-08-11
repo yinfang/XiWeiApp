@@ -1,0 +1,206 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!--占位符在不同机型手机显示不一致，使用文字缩进 \u0020为英文半角空格（两个英文半角等于一个中文半角），\u3000为中文全角空格-->
+    <string name="app_name">高速站务</string>
+    <!--登录-->
+    <string name="hint_account">请输入账号</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="regist">立即注册</string>
+    <string name="login">登录</string>
+    <string name="logout">交\u3000\u3000班</string>
+
+    <!--班长值班记录-->
+    <string name="onduty_out_people">外\u3000\u3000勤：</string>
+    <string name="onduty_team">班\u3000\u3000次：</string>
+    <string name="onduty_class">班\u3000\u3000组：</string>
+    <string name="onduty_total_fee">收\u0020\u0020费\u0020\u0020额：</string>
+    <string name="onduty_back_card">回\u0020\u0020收\u0020\u0020卡：</string>
+    <string name="onduty_output_card">发\u0020\u0020卡\u0020\u0020量：</string>
+    <string name="onduty_receive_people">接\u0020\u0020班\u0020\u0020人：</string>
+    <string name="onduty_money_exchange">车道备用金\n交接情况：</string>
+    <string name="onduty_goods_exchange">车道物品\n交接情况：</string>
+    <string name="onduty_machine_run">车道设备\n运行情况：</string>
+    <string name="onduty_inout_dirty">亭\u0020\u0020内\u0020\u0020外\n卫生情况：</string>
+    <string name="onduty_service_goods">服\u0020\u0020务\u0020\u0020台\n物品情况：</string>
+    <string name="onduty_else">其\u3000\u3000他：</string>
+    <string name="onduty_agent">值班站长：</string>
+    <string name="onduty_standard_on">规范上岗\n情\u3000\u3000况：</string>
+    <string name="onduty_standard_exchange">交\u0020\u0020接\u0020\u0020班\n程序规范：</string>
+    <string name="onduty_work_record">文明服务\n工作记录：</string>
+    <string name="onduty_num_same">票\u0020\u0020卡\u0020\u0020款\n一\u3000\u3000致：</string>
+    <string name="onduty_inandout_dirty">亭\u0020\u0020内\u0020\u0020及\n广场卫生：</string>
+    <string name="onduty_remark">备\u3000\u3000注：</string>
+    <string name="receive_remark">备\u3000注：</string>
+    <string name="choise_feeman">请选择收费员</string>
+
+    <!--站长值班记录-->
+    <string name="onduty_station_team">班\u3000\u3000次：</string>
+    <string name="onduty_station_range">时\u3000\u3000间：</string>
+    <string name="onduty_station_monitor">班\u3000\u3000长：</string>
+    <string name="onduty_station_num">人\u3000\u3000数：</string>
+    <string name="onduty_station_totle_fee">征\u0020\u0020费\u0020\u0020额：</string>
+    <string name="onduty_station_car_num">车流量：</string>
+    <string name="onduty_station_check_num">检\u0020\u0020测\u0020\u0020量：</string>
+    <string name="onduty_station_return_num">劝\u0020\u0020返\u0020\u0020量：</string>
+    <string name="onduty_station_exchange">班\u0020组\u0020交\u0020接\u0020班\u0020\u0020\n跟班作业情况：</string>
+    <string name="onduty_money_card">钱卡上解情况：</string>
+    <string name="onduty_night_check">夜间巡查情况：</string>
+    <string name="onduty_unormal_state">异\u3000常\u3000情况：</string>
+    <string name="onduty_station_else">其\u3000\u3000\u3000\u3000他：</string>
+    <string name="onduty_safe_check">安\u0020\u0020全\u0020\u0020检\u0020\u0020查\u0020\u0020情\u0020况：</string>
+    <string name="onduty_check_else">其\u3000\u3000\u3000\u3000\u3000\u3000他：</string>
+    <string name="onduty_station_remark">备\u3000\u3000\u3000\u3000\u3000\u3000注：</string>
+    <string name="onduty_station_in_num">入\u3000\u3000口\n车\u0020\u0020流\u0020\u0020量：</string>
+    <string name="onduty_station_out_num">出\u3000\u3000口\n车\u0020\u0020流\u0020\u0020量：</string>
+    <string name="onduty_notify_check">上级通知\u0020\u0020\u0020\n检查内容：</string>
+    <string name="onduty_implement_state">落\u3000\u3000实\u0020\u0020\u0020\n处理情况：</string>
+    <string name="onduty_duringonduty_tip">填表说明：本栏目填写时需根据收费站实际情况，综合说明当班期间当班人员到岗情况、仪容仪表、设备运行情况、版本号、时钟校对及软件升级、车道特殊情况（设备故障，因恶劣天气交通事故引起的收费站封闭、车辆分流等异常情况，收缴争议，其他情况）、票证工作（票卡情况，后台复核情况）、车道服务纠正、夜巡情况、异常情况及其他情况。</string>
+
+    <!--特情处理-->
+    <string name="special_date">日\u3000\u3000期：</string>
+    <string name="special_time">时\u3000\u3000间：</string>
+    <string name="special_class">班\u3000\u3000次：</string>
+    <string name="special_feeman">员\u3000\u3000工：</string>
+    <string name="special_car_road">车\u3000\u3000道：</string>
+    <string name="special_car_type">车\u3000\u3000型：</string>
+    <string name="special_car_num">车\u3000\u3000牌：</string>
+
+    <!--文明服务-->
+    <string name="civilized_date">日\u3000\u3000期：</string>
+    <string name="civilized_time">时\u3000\u3000间：</string>
+    <string name="civilized_remark">备\u3000\u3000注：</string>
+    <string name="civilized_num">数\u3000\u3000量：</string>
+    <string name="civilized_out_people">外勤签字：</string>
+    <string name="civilized_car_num">车\u0020\u0020牌\u0020\u0020号：</string>
+
+    <!--治超管理 出口记录-->
+    <string name="over_reason">事\u3000\u3000由：</string>
+    <string name="over_check_team">查验班次：</string>
+    <string name="title_over_car">大件持证超限运输车辆\n %s查验登记表</string>
+    <string name="over_car_no">车\u0020\u0020牌\u0020\u0020号：</string>
+    <string name="over_file_no">车辆行驶\u0020\u0020\n证档案号：</string>
+    <string name="over_owner_name">车主姓名：</string>
+    <string name="over_run_no">车辆营运\u0020\u0020\n证\u3000\u3000号：</string>
+
+    <string name="over_bill_no">单\u3000\u3000号：</string>
+    <string name="over_size">几何尺寸：</string>
+    <string name="over_car_weight">车货总重：</string>
+    <string name="over_in_weight">入口重量：</string>
+
+    <string name="over_instation_name">入\u0020口\u0020站\u0020名\u0020称：</string>
+    <string name="over_pass_valid">通行证有效期：</string>
+    <string name="over_out_time">出\u0020\u0020\u0020站\u0020\u0020\u0020时\u0020\u0020间：</string>
+    <string name="over_pass_company">发\u0020\u0020\u0020证\u0020\u0020\u0020单\u0020\u0020位：</string>
+    <string name="over_out_weight">出口检测重量：</string>
+    <string name="over_goods_name">货\u0020\u0020\u0020物\u0020\u0020\u0020名\u0020\u0020称：</string>
+    <string name="over_axleLoad">轴\u0020\u0020\u0020荷\u0020\u0020\u0020分\u0020\u0020布：</string>
+    <string name="over_out_size">出\u0020\u0020\u0020站\u0020\u0020\u0020尺\u0020\u0020寸：</string>
+    <string name="over_has_certificate">有\u0020无\u0020许\u0020可\u0020证：</string>
+    <string name="over_is_equal">车证是否相符：</string>
+    <string name="over_is_care">是\u0020\u0020\u0020否\u0020\u0020\u0020监\u0020\u0020护：</string>
+    <string name="over_care_person">监\u0020\u0020\u0020护\u0020\u0020\u0020人\u0020\u0020员：</string>
+    <string name="over_totle_fee">缴\u0020\u0020费\u0020\u0020金\u0020\u0020额</string>
+    <string name="over_is_reduce">是\u0020\u0020\u0020否\u0020\u0020\u0020减\u0020\u0020征：</string>
+    <string name="over_result">处\u0020\u0020\u0020理\u0020\u0020\u0020结\u0020\u0020果：</string>
+    <string name="over_total_fee">总\u0020\u0020\u0020\u0020\u0020\u0020金\u0020\u0020\u0020\u0020\u0020\u0020额：</string>
+    <string name="over_before_fee">减\u0020征\u0020前\u0020金\u0020额：</string>
+    <string name="over_after_fee">减\u0020征\u0020后\u0020金额：</string>
+
+    <!--治超管理 入口记录-->
+    <string name="over_out_name">姓\u3000\u3000名：</string>
+    <string name="over_out_relation">与\u0020\u0020上\u0020\u0020述\n车辆关系：</string>
+    <string name="over_out_company">单位名称：</string>
+    <string name="over_out_legal_people">单位法定\n代\u0020\u0020表\u0020\u0020人：</string>
+
+    <string name="over_out_check_time">查\u0020\u0020\u0020验\u0020\u0020\u0020时\u0020\u0020间：</string>
+    <string name="over_out_pass_no">通\u0020\u0020\u0020行\u0020\u0020\u0020证\u0020\u0020号：</string>
+    <string name="over_out_check_weight">检\u0020\u0020\u0020测\u0020\u0020\u0020重\u0020\u0020量：</string>
+    <string name="over_out_load_size">载\u0020\u0020\u0020后\u0020\u0020\u0020尺\u0020\u0020寸：</string>
+    <string name="over_out_transport_company">承\u0020\u0020\u0020运\u0020\u0020\u0020单\u0020\u0020位：</string>
+    <string name="over_out_check_way">验\u0020\u0020\u0020证\u0020\u0020\u0020方\u0020\u0020式：</string>
+    <string name="over_out_else_case">其\u0020\u0020\u0020他\u0020\u0020\u0020情\u0020\u0020况：</string>
+    <string name="over_tips"> 1.允许通行,必须按规定路线、时间、时速等要求通行；\n2.需监护通行的车辆必须严格按照监护规定通行；\n3.在出口收费站，应按照全计重收费政策足额交纳通行费；\n4.服从管理,严禁逃检、逃费、闯站等，否则，将按相关法规从严查处，并列入黑名单。</string>
+    <string name="over_tip_time">日\u3000\u3000期：</string>
+    <string name="over_certifacate_no">证\u3000\u0020\u0020件\u3000\u0020\u0020号：</string>
+
+    <!--投诉管理-->
+    <string name="complaint_people">投\u0020\u0020诉\u0020\u0020人：</string>
+    <string name="recieve_people">受\u0020\u0020理\u0020\u0020人：</string>
+    <string name="complaint_car_num">车\u0020\u0020牌\u0020\u0020号：</string>
+
+    <string name="onduty_form_title">%s%s年%s月值班信息表</string>
+    <string name="before_month"><![CDATA[<<\u3000上一月]]></string>
+    <string name="next_month"><![CDATA[下一月\u3000>>]]></string>
+    <string name="before_day"><![CDATA[<<\u3000昨天]]></string>
+    <string name="next_day"><![CDATA[下一月\u3000>>]]></string>
+    <string name="before_year"><![CDATA[<<\u3000上一月]]></string>
+    <string name="next_year"><![CDATA[下一月\u3000>>]]></string>
+
+    <array name="prority_list">
+        <item>优</item>
+        <item>良</item>
+        <item>差</item>
+    </array>
+    <array name="is_reduce">
+        <item>是</item>
+        <item>否</item>
+    </array>
+    <array name="has_certificate">
+        <item>有</item>
+        <item>无</item>
+    </array>
+    <array name="query_method">
+        <item>按天</item>
+        <item>按月</item>
+        <item>按年</item>
+    </array>
+    <array name="is_solve">
+        <item>已现场处理</item>
+        <item>现场无法处理</item>
+    </array>
+    <array name="check_state">
+        <item>正常</item>
+        <item>异常</item>
+        <item>完好</item>
+        <item>破损</item>
+    </array>
+
+    <array name="inpection_type">
+        <item>上岗规范</item>
+        <item>现场管理</item>
+        <item>政策掌握</item>
+        <item>票证管理</item>
+        <item>绿通管理</item>
+        <item>机电管理</item>
+        <item>内务管理</item>
+        <item>文明服务</item>
+        <item>业务操作</item>
+        <item>其他</item>
+    </array>
+
+    <array name="weather_list">
+        <item>晴</item>
+        <item>多云</item>
+        <item>阴</item>
+        <item>小雨</item>
+        <item>中雨</item>
+        <item>大雨</item>
+        <item>暴雨</item>
+        <item>小到中雨</item>
+        <item>中到大雨</item>
+        <item>大到暴雨</item>
+        <item>阵雨</item>
+        <item>雷阵雨</item>
+        <item>雾</item>
+        <item>霾</item>
+        <item>扬沙</item>
+        <item>雨夹雪</item>
+        <item>小雪</item>
+        <item>中雪</item>
+        <item>大雪</item>
+        <item>暴雪</item>
+        <item>小到中雪</item>
+        <item>中到大雪</item>
+        <item>大到暴雪</item>
+    </array>
+</resources>

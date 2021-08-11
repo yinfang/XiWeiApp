@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_mian_bg">
+
+    <LinearLayout
+        android:id="@+id/logo_ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/margin_large"
+        android:background="@drawable/selector_retc_white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_large"
+            android:paddingRight="@dimen/margin_xlarge">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.3"
+                android:gravity="center|bottom"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_margin"
+                    android:layout_height="@dimen/bottom_margin"
+                    android:src="@mipmap/logo2" />
+
+                <Space
+                    android:layout_width="@dimen/margin_large"
+                    android:layout_height="match_parent" />
+
+                <ImageView
+                    android:layout_width="@dimen/bottom_margin"
+                    android:layout_height="@dimen/bottom_margin"
+                    android:src="@mipmap/logo1" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="@dimen/margin_large"
+                android:layout_weight="0.7"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="陕西高速西渭站务管理系统"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="SHAANXI EXPRESSWAY XIWEI STATION MANAGEMENT SYSTEM"
+                    android:textColor="@color/black"
+                    android:textSize="7sp" />
+
+                <EditText
+                    android:id="@+id/etAccount"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/btn_coner_stroke_black"
+                    android:drawableLeft="@drawable/ic_account"
+                    android:drawablePadding="@dimen/margin_middle"
+                    android:hint="@string/hint_account"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_23" />
+
+                <EditText
+                    android:id="@+id/etPw"
+                    style="@style/TextStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginTop="@dimen/margin_middle"
+                    android:paddingLeft="5dp"
+                    android:background="@drawable/btn_coner_stroke_black"
+                    android:drawablePadding="@dimen/margin_middle"
+                    android:drawableStart="@drawable/ic_password"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword"
+                    android:singleLine="true"
+                    android:textColorHint="@color/gray_23" />
+
+                <Button
+                    android:id="@+id/btn_login"
+                    style="@style/loginBtnStyle1"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/btn_height"
+                    android:layout_marginTop="@dimen/margin_large"
+                    android:text="@string/login" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/TextStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Copyright  2019 by  www.kunbo.com  all rights reserved"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_ll" />
+
+    <com.zyf.util.statusBarUtil.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/logo_ll"
+        app:layout_constraintVertical_bias="1"
+        app:use_type="use_padding_top">
+
+
+    </com.zyf.util.statusBarUtil.StatusBarHeightView>
+</androidx.constraintlayout.widget.ConstraintLayout>

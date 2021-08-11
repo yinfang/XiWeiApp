@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_large">15dp</dimen>
+    <dimen name="margin_xlarge">60dp</dimen>
+    <dimen name="delete_img">30dp</dimen>
+    <dimen name="tab_img">45dp</dimen>
+    <dimen name="small_img">36dp</dimen>
+    <dimen name="add_img">25dp</dimen>
+    <dimen name="tab_head_img">50dp</dimen>
+    <dimen name="tab_width">85dp</dimen>
+    <dimen name="btn_height">35dp</dimen>
+    <dimen name="min_width">80dp</dimen>
+    <dimen name="line_height">35dp</dimen>
+    <dimen name="margin_normal">10dp</dimen>
+    <dimen name="tab_height">65dp</dimen>
+    <dimen name="indicator_height">5dp</dimen>
+    <dimen name="bottom_margin">90dp</dimen>
+
+</resources>

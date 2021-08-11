@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray_a3"
+    android:orientation="vertical"
+    app:layout_gravity="center">
+
+    <LinearLayout
+        android:id="@+id/list_title_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/small_img"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/list_title"
+            style="@style/TextDarkGrayStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/bg_gray"
+            android:gravity="center"
+            android:text="车道" />
+
+        <TextView
+            style="@style/TextGrayStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="3"
+            android:background="@color/bg_gray"
+            android:gravity="center"
+            android:text="时间"
+            android:visibility="gone" />
+
+        <TextView
+            style="@style/TextDarkGrayStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/bg_gray"
+            android:gravity="center"
+            android:text="收费员" />
+
+        <LinearLayout
+            android:id="@+id/add_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/bg_gray"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/add_img"
+                android:layout_height="@dimen/add_img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_add_green" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/list_item_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="0.5dp"
+        android:minHeight="@dimen/line_height"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/et_num"
+            style="@style/TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:gravity="center" />
+
+        <TextView
+            android:id="@+id/tv_time_range"
+            style="@style/TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="0.5dp"
+            android:layout_marginRight="0.5dp"
+            android:layout_weight="3"
+            android:background="@color/white"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_fee_mans"
+            style="@style/TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:gravity="center" />
+
+        <LinearLayout
+            android:id="@+id/remove_ll"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:paddingLeft="@dimen/margin_normal"
+            android:paddingRight="@dimen/margin_normal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/remove_image"
+                android:layout_width="@dimen/add_img"
+                android:layout_height="@dimen/add_img"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_remove_red" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

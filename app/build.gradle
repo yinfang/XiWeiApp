@@ -1,0 +1,89 @@
+apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
+apply plugin: 'save.state'
+def releaseTime() {
+    return new Date().format("yyyy_MM_dd", TimeZone.getTimeZone("UTC"))
+}
+android {
+    signingConfigs {
+        debug {
+            storeFile file('D:\\Projects\\AndroidStudioProjects\\XiWeiApp\\app\\xiwei.keystore')
+            storePassword '02985403325'
+            keyAlias = 'xiwei'
+            keyPassword '02985403325'
+        }
+        release {
+            storeFile file('D:\\Projects\\AndroidStudioProjects\\XiWeiApp\\app\\xiwei.keystore')
+            storePassword '02985403325'
+            keyPassword '02985403325'
+            keyAlias = 'xiwei'
+        }
+    }
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.kunbo.xiweiapp"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 13
+        versionName "2.2"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled true
+    }
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+    //android studio默认so文件加载目录为:src/main/jniLibs
+    //如在module的build.gradle按照如下方式,自定义了so文件加载目录请确保对应目录下只有armeabi目录
+    sourceSets {
+        main { jniLibs.srcDirs = ['libs'] }
+    }
+    buildTypes {
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            // 移除无用的resource文件（动态资源id会出问题）
+            //shrinkResources true
+            //混淆
+            minifyEnabled false
+            //Zipalign优化
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    //自定义打包时apk名字
+    applicationVariants.all { variant ->    //批量修改Apk名字
+        variant.outputs.all { output ->
+            def outputFile = output.outputFile
+            if (outputFile.name.contains("debug")) {
+                // highSpeed_渠道名_版本名.apk  还可以拼接其他app内容：variant.versionCode  variant.buildType.name
+                def debugApkName = "StationService_APP_code_${variant.versionCode}_v${variant.versionName}_${releaseTime()}_debug.apk"
+                outputFileName = new File("../debug/", debugApkName)
+            } else if (outputFile.name.contains("release")) {
+                def releaseApkName = "StationService_APP_code_${variant.versionCode}_v${variant.versionName}_${releaseTime()}_release.apk"
+                outputFileName = new File("../release/", releaseApkName)
+            }
+        }
+    }
+}
+greendao {
+    //版本号，升级时可配置,表结构有变化时应在 MyDBHelper中进行数据迁移
+    schemaVersion 9
+    targetGenDir 'src/main/java'
+    daoPackage 'com.kunbo.xiwei.db.entity'
+}
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'androidx.test.espresso:espresso-core:3.1.0-alpha4'
+    implementation project(':common')
+    implementation 'androidx.test:runner:1.1.0-alpha4'
+    implementation 'com.jakewharton:butterknife:10.1.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    implementation 'com.amap.api:location:latest.integration'
+    implementation 'com.github.PhilJay:MPAndroidChart:v3.1.0'
+}

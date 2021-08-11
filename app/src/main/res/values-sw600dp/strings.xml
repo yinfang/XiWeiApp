@@ -1,0 +1,31 @@
+<resources>
+    <!--占位符的使用：1个汉字 = 1个\u3000; = 2个\u0020; -->
+    <string name="app_name">高速站务</string>
+    <!--登录-->
+    <string name="hint_account">请输入账号</string>
+    <string name="hint_password">请输入密码</string>
+    <string name="forget_password">忘记密码?</string>
+    <string name="regist">立即注册</string>
+    <string name="login">登录</string>
+
+    <!--治超管理 入口记录-->
+    <string name="title_over_car">大件持证超限运输车辆%s查验登记表</string>
+    <string name="over_out_name">姓\u3000\u3000名：</string>
+    <string name="over_out_relation">与上述车\u0020\u0020\n辆\u0020\u0020关\u0020\u0020系：</string>
+    <string name="over_out_company">单位名称：</string>
+    <string name="over_out_legal_people">单位法定\u0020\u0020\n代\u0020\u0020表\u0020\u0020人：</string>
+    <string name="over_out_else_case">其他情况：</string>
+    <string name="over_certifacate_no">证\u0020件\u0020号：</string>
+
+    <!--治超管理 出口记录-->
+    <string name="over_total_fee">总\u0020\u0020\u0020\u0020\u0020\u0020金\u0020\u0020\u0020\u0020\u0020额：</string>
+    <string name="over_before_fee">减\u0020征\u0020前\u0020金额：</string>
+    <string name="over_after_fee">减\u0020征\u0020后\u0020金额：</string>
+
+    <!--投诉管理-->
+    <string name="complaint_car_num">车\u0020\u0020牌\u0020\u0020号：</string>
+
+    <!--站长值班记录当班期间提示-->
+    <string name="onduty_duringonduty_tip">填表说明：本栏目填写时需根据收费站实际情况，综合说明当班期间当班人员到岗情况、仪容仪表、设备运行情况、版本号、时钟校对及软件升级、车道特殊情况（设备故障，因恶劣天气交通事故引起的收费站封闭、车辆分流等异常情况，收缴争议，其他情况）、票证工作（票卡情况，后台复核情况）、车道服务纠正、夜巡情况、异常情况及其他情况。</string>
+
+</resources>

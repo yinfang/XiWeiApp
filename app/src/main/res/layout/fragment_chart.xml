@@ -1,0 +1,177 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_ll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="@dimen/margin_normal"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/fee_num_ll"
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/selector_gray_gradient"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/tab_head_img"
+            android:layout_height="@dimen/tab_head_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@mipmap/ic_line_chart" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="收费额、车流量示意图"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/LargeTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text=">>"
+            android:textColor="@color/title_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/over_check_ll"
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/selector_gray_gradient"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/tab_head_img"
+            android:layout_height="@dimen/tab_head_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/ic_bar_chart" />
+
+        <TextView
+            style="@style/TextStyle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="治超检测数据示意图"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/LargeTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text=">>"
+            android:textColor="@color/title_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/selector_gray_gradient"
+        android:orientation="horizontal"
+        android:visibility="invisible">
+
+        <ImageView
+            android:layout_width="@dimen/tab_head_img"
+            android:layout_height="@dimen/tab_head_img"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:src="@drawable/ic_bar_chart" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:layout_weight="1"
+            android:gravity="center|left"
+            android:text="治超检测数据示意图"
+            android:textColor="@color/gray_23"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/LargeTextStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:text=">>"
+            android:textColor="@color/title_blue"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_coner_blue"
+        android:gravity="center"
+        android:text="@string/title_over_car"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_coner_blue"
+        android:gravity="center"
+        android:text="@string/title_over_car"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_coner_blue"
+        android:gravity="center"
+        android:text="@string/title_over_car"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/margin_normal"
+        android:layout_weight="1"
+        android:background="@drawable/btn_coner_blue"
+        android:gravity="center"
+        android:text="@string/title_over_car"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+</LinearLayout>

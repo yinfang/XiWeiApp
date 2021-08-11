@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_mian_bg">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/user_ll"
+        style="@style/LinearLayoutClickStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginTop="@dimen/btn_height"
+        android:layout_marginRight="@dimen/margin_large"
+        android:background="@drawable/selector_retc_userll"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="@dimen/margin_small"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/user_photo"
+            android:layout_width="@dimen/tab_head_img"
+            android:layout_height="@dimen/tab_head_img"
+            android:src="@mipmap/headimg_default"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/name_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/user_photo"
+            app:layout_constraintTop_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center_vertical"
+                android:text="用户名"
+                android:textColor="@color/gray_23"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toEndOf="@+id/user_photo"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/user_no"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="5dp"
+                android:textAlignment="center"
+                app:layout_constraintStart_toEndOf="@+id/user_photo"
+                app:layout_constraintTop_toBottomOf="@+id/user_name" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="@id/name_ll"
+            app:layout_constraintLeft_toRightOf="@id/name_ll">
+
+            <TextView
+                android:id="@+id/user_station"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/user_role"
+                style="@style/TextStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:gravity="center"
+            android:minHeight="@dimen/tab_head_img"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf=" @+id/user_ll"
+            app:layout_constraintRight_toRightOf=" @+id/user_ll"
+            app:layout_constraintTop_toTopOf=" @+id/user_ll">
+
+            <LinearLayout
+                android:id="@+id/upload_ll"
+                style="@style/LinearLayoutClickStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal">
+
+                <ImageView
+                    android:id="@+id/iv_upload"
+                    android:layout_width="@dimen/delete_img"
+                    android:layout_height="@dimen/delete_img"
+                    android:background="@mipmap/upload_default" />
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0未上传" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/black" />
+
+            <LinearLayout
+                android:id="@+id/sycn_ll"
+                style="@style/LinearLayoutClickStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal">
+
+                <ImageView
+                    android:layout_width="@dimen/delete_img"
+                    android:layout_height="@dimen/delete_img"
+                    android:padding="2dp"
+                    android:src="@mipmap/ic_main_refresh" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="同步信息" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="@dimen/line_height"
+                android:background="@color/black" />
+
+
+            <LinearLayout
+                android:id="@+id/exchange_ll"
+                style="@style/LinearLayoutClickStyle"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/margin_normal"
+                android:paddingRight="@dimen/margin_normal">
+
+                <ImageView
+                    android:layout_width="@dimen/delete_img"
+                    android:layout_height="@dimen/delete_img"
+                    android:src="@drawable/ic_exchange" />
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="交班" />
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/page_menu_ll"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/margin_large"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/user_ll"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.zyf.view.pageMenuLayout.PageMenuLayout
+            android:id="@+id/page_menu"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_gravity="center"
+            app:pagemenu_row_count="2"
+            app:pagemenu_span_count="3" />
+
+        <com.zyf.view.pageMenuLayout.IndicatorView
+            android:id="@+id/page_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_large"
+            android:layout_gravity="bottom|center_horizontal"
+            app:gravity="0"
+            app:indicatorColor="#AFB9F6"
+            app:indicatorColorSelected="#FFFFFF"
+            app:indicatorWidth="10" />
+    </LinearLayout>
+
+    <com.zyf.util.statusBarUtil.StatusBarHeightView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/page_menu_ll"
+        app:layout_constraintVertical_bias="1"
+        app:use_type="use_padding_top">
+
+    </com.zyf.util.statusBarUtil.StatusBarHeightView>
+</androidx.constraintlayout.widget.ConstraintLayout>
